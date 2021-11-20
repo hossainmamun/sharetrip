@@ -1,0 +1,57 @@
+$root-color: #3062d0;
+
+.navigation {
+    background-color: #fff;
+    height: 96px;
+    line-height: 80px;
+    padding: 0;
+    z-index: 1;
+
+    .navbar-brand {
+        img{
+            width: 178px;
+            height: 56px;
+        }
+    }
+    
+    .nav-link{
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #000;
+        font-weight: 400;
+        margin: 0 2.5px;
+    }
+    .activate{
+        color: #1882FF;
+    }
+
+    // button
+    .spin-btn{
+        border: none;
+        background-color: transparent;
+        margin-right: 20px;
+        span{
+            margin-left: 10px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    .toggle-btn{
+        border: none;
+        margin-left: 20px;
+        background-color: transparent;
+    }
+}
+@media(max-width: 1399px){
+    .navigation{
+        .navbar-nav{
+            text-align: center;
+            line-height: normal;
+            padding: 15px 0;
+        }
+        .spin-btn, .toggle-btn{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+$root-color: #3062d0;
+.dashboard {
+    .left-side {
+        height: 100vh;
+        background-color: #e5e5e5;
+    }
+    .right-side {
+        span {
+            font-weight: 700;
+            display: block;
+            margin: 0 0 20px;
+        }
+    }
+
+    .slider {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .policy-item {
+        margin: 0 2px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        .col-md-3 {
+            height: 40px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            p {
+                margin: 0 0 0 15px;
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+        }
+        .primary {
+            background-color: #3884f7;
+            color: #fff;
+        }
+    }
+
+    .seat-detail {
+        margin: 0 2px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        p,
+        span {
+            margin: 0;
+        }
+        .col-md-3 {
+            height: 176px;
+        }
+
+        .start-col,
+        .end-col {
+            span {
+                font-size: 12px;
+                font-weight: 400;
+                display: inline-block;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+            }
+            p > span {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .counter {
+                font-size: 14px;
+            }
+        }
+        .end-col {
+            .d-flex {
+                justify-content: end;
+            }
+        }
+        .seat-detail-col > span {
+            font-size: 10px;
+            font-weight: 400;
+        }
+        .seat-detail-col {
+            .seat-para {
+                color: #ef7e46;
+            }
+        }
+        .cost-col {
+            background-color: #e5f2fe;
+            padding: 0;
+            text-align: end;
+            span {
+                font-size: 10px;
+            }
+            h4 {
+                font-size: 24px;
+                font-weight: 600;
+                color: $root-color;
+                margin: 5px 10px 0 0;
+            }
+            p {
+                color: #1882ff;
+                font-weight: 500;
+                margin: 0 10px 0 0;
+            }
+            .btn {
+                background-color: #1882ff;
+                padding: 8px 16px;
+                margin: 10px 10px 0 0;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard {
+        margin: 50px 0;
+        .left-side {
+            display: none;
+        }
+
+        .seat-detail {
+            text-align: center;
+            .end-col {
+                .d-flex {
+                    justify-content: center;
+                }
+            }
+            .cost-col {
+                text-align: center;
+            }
+        }
+    }
+}
